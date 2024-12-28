@@ -1,16 +1,32 @@
-# Enhanced Face and Eye Detection in Real-Time Using Haarcascades in OpenCV
+# Enhanced Real-Time Face and Eye Detection Using Custom Haar Cascades in OpenCV
 
 ## Overview
-This repository hosts a custom-trained model for face and eye detection, leveraging the power of OpenCV in Python. Developed by [SampathiNaman](https://github.com/SampathiNaman), this project aims to provide a versatile and more accurate detection system by using a model trained on a unique dataset.
+This repository features a custom-trained model for real-time face and eye detection utilizing OpenCV in Python. Developed by [SampathiNaman](https://github.com/SampathiNaman), this project integrates machine learning with classical computer vision techniques to deliver robust and efficient detection.
 
 ## Components
 - A custom-trained Haar Cascade models for detecting faces and eyes.
 - `main.py` script for face and eye detection.
 
+## Methodology
+- **Data Collection:** Gather a diverse dataset of images featuring faces and eyes in various environments, poses, and lighting conditions.  
+- **Preprocessing:** Apply techniques such as resizing, normalization, and data augmentation to enhance dataset quality and diversity.  
+- **Model Training:** Train custom Haar Cascade classifiers using annotated datasets for precise face and eye detection.  
+- **Optimization:** Fine-tune models to improve detection accuracy and minimize false positives.  
+- **Integration:** Embed trained Haar Cascade models into the OpenCV framework for seamless real-time detection.  
+- **Evaluation:** Test performance on benchmark datasets and real-world scenarios to assess accuracy, speed, and robustness.  
+- **Deployment:** Optimize for real-time applications, ensuring compatibility with various hardware environments. 
+
 ## Key Features
 - **Custom-Trained Haar Cascade Model:** Specifically trained for detecting faces and eyes with improved accuracy on custom datasets.
 - **Versatile Detection:** Supports detection in static images, video files, and real-time through webcam.
-- **Easy to Use:** Simple Python script to demonstrate the model's usage across different media types.
+- **Easy Deployment:** Simple Python script to demonstrate the model's usage across different media types.
+
+## Technology
+- **Programming Language**: Python 
+- **Libraries**: OpenCV, NumPy 
+- **Machine Learning Framework**: scikit-learn 
+- **Tools**: Haarcascade XML files, Anaconda, Jupyter Notebooks 
+- **Hardware**: Compatible with CPUs and GPUs for deployment on various platforms
 
 ## Getting Started
 
@@ -44,6 +60,20 @@ python main.py [options]
 - `--video VIDEO_PATH`: Specify the path to a video file for face and eye detection.
 - If no options are provided, the script will default to using the webcam for real-time detection.
 
+#### Example Usage:
+To detect faces and eyes in an image:
+```bash
+python main.py --image ./path-to-image/image.jpg
+```
+To detect faces and eyes in a video:
+```
+python main.py --video ./path-to-video/video.mp4
+```
+To run real-time detection via webcam:
+```
+python main.py
+```
+
 
 ## Datasets Documentation
 For a comprehensive overview of the datasets used in this project, and their applications within the project, please refer to our [detailed dataset documentation](Dataset.md). This documentation includes information on both the positive and negative datasets used in training and testing of the models.
@@ -60,5 +90,5 @@ please follow these steps:
 5. Open a Pull Request.
 
 ## Acknowledgments
-- A special thanks to the developers of the Cascade Training GUI application, which greatly simplified the process of training our custom Haar Cascade model. Their tool provided an intuitive interface and powerful features that enabled us to efficiently train and fine-tune our detection model.
-- Gratitude is also extended to Innovate for providing the internship opportunity that made this project possible. Their support and guidance have been invaluable in completing this project.
+- We extend our gratitude to the developers of the Cascade Training GUI application for simplifying the custom Haar Cascade training process.
+- Special thanks to Innovate for their invaluable support and guidance during this internship project.
